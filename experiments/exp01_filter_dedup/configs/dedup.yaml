@@ -1,0 +1,12 @@
+exact:
+  enabled: true
+  normalization: unicode_whitespace_lower
+  hash: sha256
+near:
+  enabled: true
+  method: minhash_lsh
+  ngram_size: 5
+  num_perm: 128
+  jaccard_threshold: 0.85
+  seed: 1602
+  keep: longest_document

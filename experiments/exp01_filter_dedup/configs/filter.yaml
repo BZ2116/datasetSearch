@@ -1,0 +1,16 @@
+pipeline_version: exp01-v1
+target_language: en
+language_min_ratio: 0.90
+min_characters: 200
+max_characters: 200000
+normalize_unicode: true
+normalize_whitespace: true
+remove_control_characters: true
+reject_empty: true
+security_rules:
+  enabled: true
+  pii_detection: false
+  record_reasons: true
+sampling:
+  seed: 1601
+  max_documents: 10000
