@@ -16,3 +16,10 @@
 - Update `01_research_summary.md` when research progress changes.
 - Modify `00_master_plan.md` only when the long-term research route changes.
 - Do not commit secrets, generated caches, or local environments.
+
+## Device collaboration rules
+
+- This device is the research and coordination device: responsible for literature research, experiment design, documentation, result interpretation, and uploading project files to GitHub.
+- The second computer is the experiment execution device: it may only pull/synchronize files from GitHub and run experiments locally.
+- The second computer must not push, create releases, or modify the project's GitHub history.
+- Experiment results generated on the second computer should be returned through the agreed file synchronization workflow before being incorporated into the research record.
