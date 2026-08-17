@@ -1,0 +1,9 @@
+{
+  "dataset": {"name": "HuggingFaceFW/fineweb", "config": "sample-10BT", "streaming": true, "max_documents": 5000, "seed": 1601},
+  "model": {"name": "roneneldan/TinyStories-33M", "max_length": 512, "train_tokens": 10000000, "seeds": [1601, 1602, 1603]},
+  "groups": ["A", "B", "C", "D"],
+  "filter": {"target_language": "en", "min_characters": 200, "max_characters": 200000},
+  "near_dedup": {"method": "minhash_lsh", "ngram_size": 5, "jaccard_threshold": 0.85},
+  "split": {"train": 0.8, "dev": 0.1, "test": 0.1, "seed": 1601},
+  "evaluation": {"benchmark": "wikitext", "config": "wikitext-2-raw-v1", "split": "test"}
+}

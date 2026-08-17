@@ -1,0 +1,8 @@
+# Data processing runner uses Python standard library only.
+# Optional Agent training/benchmark dependencies:
+datasets>=2.19
+transformers>=4.41
+accelerate>=0.30
+torch>=2.2
+evaluate>=0.4
+scikit-learn>=1.4

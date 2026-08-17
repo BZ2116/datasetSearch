@@ -75,6 +75,8 @@
 - D 高于 C：需排除数据量、采样和训练预算差异；
 - loss 下降但下游变差：检查过拟合、污染和覆盖损失。
 
-## 当前状态
+## Agent 执行包
 
-当前完成实验设计、配置和结果模板，尚未运行数据处理或模型训练，不填写虚构的保留率和模型分数。结果写入 `results/` 下对应文件。
+将本目录整体交给执行 Agent。Agent 读取 [`AGENT_TASK.md`](AGENT_TASK.md)，自主申请 GPU、安装依赖、下载 FineWeb 和 TinyStories-33M，运行数据处理与训练，并将完整结果写入 `results/run/`。具体固定参数见 [`config.json`](config.json)，单入口处理程序是 [`run_experiment.py`](run_experiment.py)。
+
+本机只验证代码语法和核心函数，不填写虚构的保留率或模型分数；真实结果必须由执行 Agent 产生。
