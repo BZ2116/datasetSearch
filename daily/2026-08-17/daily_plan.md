@@ -4,6 +4,19 @@
 
 数据选择和数据混合分别带来什么收益？
 
+## 论文研读
+
+重点阅读以下工作，先明确方法和实验结论，再设计复现实验。正式录用论文为主，前沿工作单独标注：
+
+- `[正式录用] DataComp-LM`（NeurIPS 2024）：固定模型、训练预算和评测协议。
+- `[正式录用] DS²`（ICLR 2025）：了解 rating-based 数据筛选和数据效率评测。
+- `[正式录用] Data Mixture Optimization`（NeurIPS 2025）：理解数据配比优化的实验设置。
+- `[正式录用] D3`（IJCAI 2025）：了解 diversity、difficulty、dependability 的组合。
+- `[前沿/待确认] Large-Scale Data Selection for Instruction Tuning`：补充 instruction 数据选择方法。
+- `[前沿/待确认] Rethinking Data Selection: The Importance of Coverage over Difficulty`：核对 coverage 与 difficulty 的比较。
+
+阅读产出：更新 `benchmarks/data_selection_matrix.md`，记录每篇论文的数据池、选择信号、baseline、固定预算和主要指标，并明确哪些结论可以由本实验验证。
+
 ## 具体数据与 benchmark
 
 参考 DataComp-LM 的固定模型/训练/评测思想；由于本实验要直接比较 instruction 数据选择，使用带有来源和任务族标签的 instruction 数据池作为可执行替代。
