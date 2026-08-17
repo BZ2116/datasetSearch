@@ -69,3 +69,7 @@ FineWeb 提供了“逐项 ablation 数据处理决策”的范式；DataComp �
 ## 2026-08-16 新增进展
 
 已建立 `experiments/exp01_filter_dedup/` 实验骨架，将过滤与去重拆成四个对照组：原始数据、过滤、过滤+exact dedup、过滤+near dedup。当前完成的是可复现实验设计、配置和结果模板，尚未运行数据处理或模型训练，因此暂无实际收益结论。
+
+## 2026-08-17 新增进展
+
+已建立 `experiments/exp02_selection_mixture/`，将数据选择拆为 random、quality、difficulty、embedding coverage、quality+coverage，并加入任务族混合比例对照。今日的研究判断是：difficulty 是模型相关信号，不能直接等价为数据价值；coverage 和任务族分布必须单独报告；复杂选择方法必须和随机基线、固定预算及未见任务族评测比较。

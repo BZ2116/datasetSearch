@@ -1,0 +1,7 @@
+{
+  "dataset": {"name": "allenai/tulu-3-sft-mixture", "candidate_size": 10000, "selected_size": 2000, "seed": 1701},
+  "model": {"name": "roneneldan/TinyStories-33M", "max_length": 512, "seeds": [1701, 1702, 1703]},
+  "selection": {"quality_keep_ratio": 0.7, "coverage_clusters": 100, "embedding_model": "sentence-transformers/all-MiniLM-L6-v2", "difficulty_model": "roneneldan/TinyStories-33M"},
+  "mixtures": {"balanced": {"reasoning": 0.33, "knowledge_qa": 0.33, "instruction_dialogue": 0.34}, "reasoning_heavy": {"reasoning": 0.6, "knowledge_qa": 0.2, "instruction_dialogue": 0.2}, "natural": "candidate_pool_proportions"},
+  "evaluation_splits": ["in_domain", "unseen_expression", "unseen_entity", "unseen_task_family"]
+}

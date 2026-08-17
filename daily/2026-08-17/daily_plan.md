@@ -6,7 +6,7 @@
 
 ## 具体数据与 benchmark
 
-优先使用 DataComp small/medium filtering track；如果计算资源不足，使用一个带有任务族标签的 instruction 数据池作为替代。
+参考 DataComp-LM 的固定模型/训练/评测思想；由于本实验要直接比较 instruction 数据选择，使用带有来源和任务族标签的 instruction 数据池作为可执行替代。
 
 DataComp 的固定模型和下游测试集用于控制变量；重点记录其数据筛选策略，而不是复现完整数据规模。
 
@@ -29,9 +29,10 @@ DataComp 的固定模型和下游测试集用于控制变量；重点记录其�
 ## 产出
 
 - `experiments/exp02_selection_mixture/README.md`
-- 选择方法矩阵。
-- 数据混合配置。
-- benchmark 与指标设计。
+- `experiments/exp02_selection_mixture/AGENT_TASK.md`
+- `experiments/exp02_selection_mixture/config.json`
+- `benchmarks/data_selection_matrix.md`
+- `daily/2026-08-17/daily_summary.md`
 
 ## 对调研的作用
 
