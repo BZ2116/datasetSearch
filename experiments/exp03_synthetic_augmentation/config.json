@@ -1,0 +1,9 @@
+{
+  "experiment_id": "exp03_synthetic_augmentation_v1",
+  "seed_dataset": {"name": "openai/gsm8k", "config": "main", "split": "train", "revision_required": true, "seed_count": 100, "seed": 1801, "strata": ["answer_type", "operation_signature", "source_index_quantile"], "parent_train_ratio": 0.8, "parent_holdout_ratio": 0.2},
+  "model": {"name": "roneneldan/TinyStories-33M", "revision_required": true, "max_length": 512, "train_samples_per_group": 1000, "train_tokens": 10000000, "loss_mask": "solution_only", "optimizer": "AdamW", "learning_rate": 0.0003, "weight_decay": 0.1, "warmup_ratio": 0.03, "batch_size_per_device": 8, "gradient_accumulation_steps": 4, "seeds": [1801, 1802, 1803]},
+  "groups": ["A_original_repeat", "B_rewrite", "C_entity_numeric", "D_constraint", "E_counterfactual", "F_composition", "G_verified_reasoning"],
+  "generation": {"model": "Qwen/Qwen2.5-7B-Instruct", "revision_required": true, "temperature": 0.7, "top_p": 0.9, "max_new_tokens": 768, "seed": 1801, "prompt_templates_file": "prompt_templates.yaml", "candidate_multiplier": 3, "max_generation_rounds": 4, "max_retries_per_request": 2},
+  "verification": {"gsm8k_answer_match": true, "require_verifier_pass_for_train": true, "require_transformation_specific_checks": true, "near_dedup_method": "char_5gram_minhash_lsh", "near_dedup_threshold": 0.85, "allow_unverified_training_samples": false},
+  "evaluation": {"protocol_file": "evaluation.md", "splits": ["in_domain", "unseen_expression", "unseen_numbers", "unseen_composition"], "examples_per_split": 200, "seed": 1901, "temperature": 0.0, "max_new_tokens": 512}
+}

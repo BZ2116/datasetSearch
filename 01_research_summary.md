@@ -73,3 +73,7 @@ FineWeb 提供了“逐项 ablation 数据处理决策”的范式；DataComp �
 ## 2026-08-17 新增进展
 
 已建立 `experiments/exp02_selection_mixture/`，将数据选择拆为 random、quality、difficulty、embedding coverage、quality+coverage，并加入任务族混合比例对照。今日的研究判断是：difficulty 是模型相关信号，不能直接等价为数据价值；coverage 和任务族分布必须单独报告；复杂选择方法必须和随机基线、固定预算及未见任务族评测比较。
+
+## 2026-08-18 新增进展
+
+已完成 Self-Instruct、Natural Instructions、LLM 数据增强综述、Evol-Instruct 和 FLAN Collection 的阅读卡片，并建立 `benchmarks/augmentation_taxonomy.md` 与 `experiments/exp03_synthetic_augmentation/`。当前将增强收益拆为语言表达、实例覆盖、任务多样性、难度提升、反事实、结构组合和可验证 reasoning 七类；后续使用 GSM8K verifier 区分“增加数据量”和“增加有效能力覆盖”。

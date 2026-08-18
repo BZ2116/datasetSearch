@@ -4,6 +4,19 @@
 
 数据增强带来什么收益？
 
+## 论文研读
+
+- `[正式录用] Self-Instruct`（ACL 2023）：理解从少量 seed 生成 instruction 数据的流程和过滤方法。
+- `[正式录用] Natural Instructions`（ACL 2022）：理解任务模板、任务族和跨任务泛化。
+- `[正式录用] Data Augmentation using Large Language Models`（Findings of ACL 2024）：比较不同增强操作及其风险。
+- `[前沿/待确认] WizardLM / Evol-Instruct`：重点阅读难度演化的操作类型及质量风险。
+- `[前沿/待确认] The Flan Collection`：作为任务混合和指令泛化的补充材料。
+- 回看已完成的 `[综述] A Survey on Data Synthesis and Augmentation for Large Language Models`，只提取 taxonomy，不重复精读。
+
+阅读产出：补充增强类型 taxonomy，分别记录语言多样性、任务多样性、难度提升和 reasoning/trajectory 增强的证据与风险。
+
+对应阅读卡片位于 `daily/2026-08-18/01_self_instruct/` 至 `05_flan/`。
+
 ## 具体数据集
 
 使用以下任务之一作为可控 seed 数据：

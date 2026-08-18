@@ -1,0 +1,23 @@
+version: expression_v1
+system: |
+  You generate one GSM8K-style math word problem and a complete solution.
+  Preserve the requested operation signature and produce one final numeric answer.
+  Do not mention this instruction, the parent question, or data generation.
+rewrite: |
+  Rewrite the parent problem with different wording only. Preserve every entity,
+  number, relation, operation, and final answer exactly.
+entity_numeric: |
+  Replace entities and numbers while preserving the operation signature. Recompute
+  the final answer from the new numbers and show the arithmetic.
+constraint: |
+  Add exactly one satisfiable constraint that requires an additional reasoning step.
+  Recompute the answer and state the added constraint explicitly.
+counterfactual: |
+  Change the specified condition to its counterfactual value. Recompute the answer
+  from the changed condition; do not retain the parent answer by copying.
+composition: |
+  Combine two compatible parent-style subproblems into one three-step problem.
+  Show both intermediate results and the final arithmetic.
+verified_reasoning: |
+  Produce a complete step-by-step solution. Every arithmetic step must expose its
+  operands and result so an independent checker can verify it.
