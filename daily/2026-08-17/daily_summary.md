@@ -6,12 +6,18 @@
 
 新增：
 
+- `01_datacomp_lm/reading_card.md`
+- `02_ds2/reading_card.md`
+- `03_mixture_optimization/reading_card.md`
+- `04_d3/reading_card.md`
+- `05_large_scale_selection/reading_card.md`
+- `06_coverage_over_difficulty/reading_card.md`
 - `experiments/exp02_selection_mixture/README.md`
 - `experiments/exp02_selection_mixture/AGENT_TASK.md`
 - `experiments/exp02_selection_mixture/config.json`
 - `benchmarks/data_selection_matrix.md`
 
-矩阵现在逐篇记录了数据池、选择信号、baseline、固定预算、主要指标、结论以及 Exp02 能否验证的范围。
+矩阵和 6 张阅读卡片现在逐篇记录了数据池、选择信号、baseline、固定预算、主要指标、结论以及 Exp02 能否验证的范围。
 
 ## 二、核心研究结论
 

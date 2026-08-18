@@ -1,0 +1,7 @@
+{
+  "dataset": {"name": "glue", "config": "qnli", "train_split": "train", "dev_split": "validation", "revision_required": true},
+  "model": {"name": "bert-base-uncased", "revision_required": true, "max_length": 256, "seeds": [2001, 2002, 2003], "epochs": 3, "batch_size": 16, "learning_rate": 0.00002},
+  "methods": ["trak", "embedding_similarity", "per_example_loss_gradient", "random"],
+  "counterfactual": {"remove_fraction": 0.01, "groups": ["full", "top_remove", "bottom_remove", "random_remove", "top_select"]},
+  "target": {"metric": "accuracy", "secondary_metric": "loss", "bootstrap_seed": 2004, "bootstrap_samples": 10000}
+}

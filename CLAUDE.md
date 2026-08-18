@@ -23,3 +23,4 @@
 - The second computer is the experiment execution device: it may only pull/synchronize files from GitHub and run experiments locally.
 - The second computer must not push, create releases, or modify the project's GitHub history.
 - Experiment results generated on the second computer should be returned through the agreed file synchronization workflow before being incorporated into the research record.
+- After completing research or experiment-design work, first verify locally and report the result; do not commit or push immediately. Only commit/push after the user explicitly requests publication.

@@ -17,6 +17,8 @@
 
 阅读产出：更新 `benchmarks/data_selection_matrix.md`，记录每篇论文的数据池、选择信号、baseline、固定预算和主要指标，并明确哪些结论可以由本实验验证。
 
+对应阅读卡片位于 `daily/2026-08-17/01_datacomp_lm/` 至 `06_coverage_over_difficulty/`。
+
 ## 具体数据与 benchmark
 
 参考 DataComp-LM 的固定模型/训练/评测思想；由于本实验要直接比较 instruction 数据选择，使用带有来源和任务族标签的 instruction 数据池作为可执行替代。

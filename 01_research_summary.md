@@ -77,3 +77,11 @@ FineWeb 提供了“逐项 ablation 数据处理决策”的范式；DataComp �
 ## 2026-08-18 新增进展
 
 已完成 Self-Instruct、Natural Instructions、LLM 数据增强综述、Evol-Instruct 和 FLAN Collection 的阅读卡片，并建立 `benchmarks/augmentation_taxonomy.md` 与 `experiments/exp03_synthetic_augmentation/`。当前将增强收益拆为语言表达、实例覆盖、任务多样性、难度提升、反事实、结构组合和可验证 reasoning 七类；后续使用 GSM8K verifier 区分“增加数据量”和“增加有效能力覆盖”。
+
+## 2026-08-19 新增进展
+
+已完成 WebArena、OSWorld、SWE-bench、FLAMES、Diverse Synthetic Coding Tasks 和 ToolMind 的研读，补充 `benchmarks/synthetic_data_validity_criteria.md` 与 `benchmarks/synthetic_failure_taxonomy.md`。当前有效性标准是：固定训练预算、质量/标签一致、verifier 通过、无评测污染，并在未见分布上稳定提升；只有训练域提升不能称为真正有效增强。
+
+## 2026-08-20 新增进展
+
+已完成 TRAK、FreeShap、Source-Aware Training、In-Run Data Shapley 和 DataDignity 的研读，并建立 `experiments/exp04_attribution/`。当前将影响归因与来源归因分开：前者必须通过 top/bottom/random 删除后的 counterfactual 重训验证，后者关注回答与支持文档之间的 provenance，不直接等同于训练样本因果影响。
